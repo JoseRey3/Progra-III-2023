@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server en python</title>
+</head>
+<body> 
+    saludo: <input type="text" name="txtNombre" id="";
+    <div id="dvSaluso"></div> 
+
+    <script>
+        document.addEventListener("DOMContentLoaded", e={
+        txtNombre,addEventListener("keyup", event=>{
+           fetch("https://legendary-spoon-rqpq5v5g7wrh59w6-3000.app.github.dev/", {
+            method: "POST",
+            body: txtNombre.value
+           }).then(resp=>resp.text())
+           .then(resp=>{
+            dvSaludo.innerHTML = resp;
+            })
+
+        })
+
+        });
+    </script>
+</body>
+</html>
